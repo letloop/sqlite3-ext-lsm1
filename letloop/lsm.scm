@@ -26,7 +26,7 @@
 
   (import (chezscheme))
 
-  (define ~check-lsm-000
+  (define ~check-lsm-nop
     (lambda ()
       ;; TODO: add checks.
       (assert #t)))
