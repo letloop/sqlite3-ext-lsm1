@@ -21,10 +21,16 @@
    lsm-new
    lsm-open
    lsm-rollback
+   ~check-lsm-000
    )
 
   (import (chezscheme))
 
+  (define ~check-lsm-000
+    (lambda ()
+      ;; TODO: add checks.
+      (assert #t)))
+  
   (define-syntax define-syntax-rule
     (syntax-rules ()
       ((define-syntax-rule (keyword args ...) body)
